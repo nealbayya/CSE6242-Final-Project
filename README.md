@@ -7,10 +7,23 @@ We aim to create a movie recommendation tool with visualizations of relative sim
 
 We have a variety of key innovations in our project. Our first key innovation is that we use PCA to map features associated with the movie, as opposed to user-movie relationships, to a smaller latent embedding that is then used downstream for both movie clustering and movie recommendation. Then we perform K Means clustering on the latent embeddings stratified according to genre of movie to obtain a genre-specific grouping of movies that can be explored. We use UMAP as a rich visualization tool for the feature embeddings representing the groupings of movies along genre. We also provide a tool for movie recommendation that uses KNN to predict the top ten most aligned movies based on the obtained PCA embedding. These are validated by showing the rating on aggregate of all the movies relative to actual rating of the searched movie. Our novel approach uses a combination of these four tools.
 
-## INSTALLATION
-To run and use the package, the only requirement is Python. The other dependencies are self-contained in this package.
+## DATA ANALYSIS INSTRUCTIONS
+To preprocess the data, run the notebook `Data_Scraping.ipynb`
 
-## EXECUTION
+To obtain the PCA embeddings, the KNN recommendations, and the K Means clustering, run the notebook  `PCA_Embeddings_KNN_KMeans.ipynb`
+
+## INSTALLATION
+To run the data preprocessing and analysis scripts, the requirements include:
+- sklearn
+- pandas
+- numpy
+- seaborn
+- matplotlib
+These work for any version of python >= 3.6.
+
+To run and use the visualization, the only requirement is Python. The other dependencies are self-contained in this package.
+
+## VISUALIZATION EXECUTION
 
 Navigate to the main directory of the project and run the following command in the terminal to set up a server:
 
