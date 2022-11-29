@@ -8,15 +8,18 @@ We aim to create a movie recommendation tool with visualizations of relative sim
 We have a variety of key innovations in our project. Our first key innovation is that we use PCA to map features associated with the movie, as opposed to user-movie relationships, to a smaller latent embedding that is then used downstream for both movie clustering and movie recommendation. Then we perform K Means clustering on the latent embeddings stratified according to genre of movie to obtain a genre-specific grouping of movies that can be explored. We use UMAP as a rich visualization tool for the feature embeddings representing the groupings of movies along genre. We also provide a tool for movie recommendation that uses KNN to predict the top ten most aligned movies based on the obtained PCA embedding. These are validated by showing the rating on aggregate of all the movies relative to actual rating of the searched movie. Our novel approach uses a combination of these four tools.
 
 ## INSTALLATION
-No installation needed
+To run and use the package, the only requirement is Python. The other dependencies are self-contained in this package.
 
 ## EXECUTION
 
-Navigate to the main directory of the project and run the following command in the terminal:
+Navigate to the main directory of the project and run the following command in the terminal to set up a server:
 
-python -m http.server 8000
+`python3 -m http.server 8000`
 
-Open an internet explorer like google chrome and go to the link that is provided from running the above command: http://[::]:8000/
+If you are using Python2, use the command 
+`python -m SimpleHTTPServer`
+
+Open an internet explorer like Google Chrome and go to the localhost link that is provided from running the above command: http://[::]:8000/
 
 ## WRITEN DEMO
 
