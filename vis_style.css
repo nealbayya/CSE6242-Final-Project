@@ -1,0 +1,36 @@
+body {
+    color: #eee;
+    background: #414a4c ;
+    font-family: Roboto;
+}
+body a {
+    color: #809fff;
+}
+h1 {
+    font-family: Roboto;
+    text-decoration: underline;
+}
+
+
+
+#dropdown_container {
+    font-family: Roboto;
+
+}
+
+select{
+    background:transparent;
+     width: 170px;
+     padding: 2px;
+     font-family:Roboto;
+     font-size:16px;
+     font-weight:600;
+     color:#fff;
+     border-color: #fff;
+     border-radius: 5px 5px 5px 5px;
+     border: 1;
+     height: 30px;
+     text-align-last:center; 
+     -webkit-appearance: none;
+}
+  
