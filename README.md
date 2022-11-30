@@ -8,6 +8,8 @@ We aim to create a movie recommendation tool with visualizations of relative sim
 We have a variety of key innovations in our project. Our first key innovation is that we use PCA to map features associated with the movie, as opposed to user-movie relationships, to a smaller latent embedding that is then used downstream for both movie clustering and movie recommendation. Then we perform K Means clustering on the latent embeddings stratified according to genre of movie to obtain a genre-specific grouping of movies that can be explored. We use UMAP as a rich visualization tool for the feature embeddings representing the groupings of movies along genre. We also provide a tool for movie recommendation that uses KNN to predict the top ten most aligned movies based on the obtained PCA embedding. These are validated by showing the rating on aggregate of all the movies relative to actual rating of the searched movie. Our novel approach uses a combination of these four tools.
 
 ## DATA ANALYSIS INSTRUCTIONS
+The raw data is located in the data_raw folder
+
 To preprocess the data, run the notebook `Data_Scraping.ipynb`
 
 To obtain the PCA embeddings, the KNN recommendations, and the K Means clustering, run the notebook  `PCA_Embeddings_KNN_KMeans.ipynb`
